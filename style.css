@@ -1,0 +1,132 @@
+.title-text {
+    text-align: center;
+}
+.all {
+    display: flex;
+    justify-content: space-between;
+}
+.ancients {
+    width: 438px;
+    padding: 20px;
+}
+.ancients-img {
+    overflow: hidden;
+    position: relative;
+    height: 573px;
+    border-radius: 15px
+}
+
+.ancient {
+    position: absolute;
+    margin: 0;
+    z-index: 0;
+}
+
+.ancient-active {
+    z-index: 100;
+}
+.ancients-checked {
+    display: block;
+    background: #e37f7f;
+    margin: 15px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+.complexity {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+    opacity: 0;
+}
+.complexity-active {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s;
+}
+.table-statistic {
+    background: wheat;
+    border: 1px black solid;
+}
+tr, th {
+    border: 1px black solid;
+}
+
+.green {
+    color: green;
+}
+.brown {
+    color: brown;
+}
+.blue {
+    color: blue;
+}
+.mythic-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.close-cards {
+    background-image: url(./assets/mythicCardBackground.png);
+    width: 270px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.open-cards {
+    width: 270px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+
+
+.arrow_right,
+.arrow_right::after {
+  position: absolute;
+  display: flex;
+  z-index: 100;
+  top: 200px;
+  left: 420px;
+  height: 3px;
+  width: 18px;
+  background: #F2785C;
+  transform: rotate(45deg);
+}
+.arrow_right::after {
+  left: 9px;
+  width: 15px;
+  content: '';
+  top: 9px;
+  transform: rotate(-90deg);
+}
+.arrow_right:hover,
+.arrow_right:hover::after {
+  background: rgba(242, 120, 92, 0.5);
+}
+.arrow_left,
+.arrow_left::after {
+  position: absolute;
+  display: flex;
+  z-index: 100;
+  top: 200px;
+  left: 48.2px;
+  height: 3px;
+  width: 18px;
+  background: #F2785C;
+  transform: rotate(-45deg);
+}
+.arrow_left::after {
+  left: -6px;
+  width: 15px;
+  content: '';
+  top: 9px;
+  transform: rotate(90deg);
+}
+.arrow_left:hover,
+.arrow_left:hover::after {
+  background: rgba(242, 120, 92, 0.5);
+}
